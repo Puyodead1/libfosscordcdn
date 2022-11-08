@@ -1,0 +1,7 @@
+build/
+x64/
+lib/**/*.dll
+lib/**/*.lib
+lib/**/*.so
+.vs/
+include/**/*

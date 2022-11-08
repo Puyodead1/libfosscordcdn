@@ -1,0 +1,3 @@
+# libfosscordcdn
+
+a thing
