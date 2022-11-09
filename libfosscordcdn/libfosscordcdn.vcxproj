@@ -129,16 +129,17 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Puyodead1\source\repos\libfosscordcdn\include\$(BaseNuGetRuntimeIdentifier)$(PlatformArchitecture);C:\Users\Puyodead1\Documents\Code\node\src;C:\Users\Puyodead1\Documents\Code\node\deps\uv\include;C:\Users\Puyodead1\Documents\Code\node\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Puyodead1\source\repos\libfosscordcdn\ffmpeg\$(BaseNuGetRuntimeIdentifier)$(PlatformArchitecture)\include;C:\Users\Puyodead1\Documents\Code\node\src;C:\Users\Puyodead1\Documents\Code\node\deps\uv\include;C:\Users\Puyodead1\Documents\Code\node\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Puyodead1\Documents\Code\node\Debug;C:\Users\Puyodead1\source\repos\libfosscordcdn\lib\$(BaseNuGetRuntimeIdentifier)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avformat.lib;avcodec.lib;avutil.lib;node.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Puyodead1\Documents\Code\node\Debug;C:\Users\Puyodead1\source\repos\libfosscordcdn\ffmpeg\$(BaseNuGetRuntimeIdentifier)$(PlatformArchitecture)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avformat.lib;avcodec.lib;avutil.lib;swscale.lib;node.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
