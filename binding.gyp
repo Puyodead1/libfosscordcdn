@@ -12,44 +12,24 @@
                "OS=='win' and target_arch=='x64'",
                {
                   "include_dirs":[
-                     "<(module_root_dir)/include/win64"
+                     "<(module_root_dir)/ffmpeg/win64/include"
                   ],
                   "libraries":[
-                     "<(module_root_dir)/lib/win64/avcodec.lib",
-                     "<(module_root_dir)/lib/win64/avformat.lib",
-                     "<(module_root_dir)/lib/win64/avutil.lib"
+                     "<(module_root_dir)/ffmpeg/win64/lib/avcodec.lib",
+                     "<(module_root_dir)/ffmpeg/win64/lib/avformat.lib",
+                     "<(module_root_dir)/ffmpeg/win64/lib/avutil.lib"
                   ],
-                  "copies":[
-                     {
-                        "destination":"<(module_root_dir)/build/Release/",
-                        "files":[
-                           "<(module_root_dir)/lib/win64/avcodec-59.dll",
-                           "<(module_root_dir)/lib/win64/avformat-59.dll",
-                           "<(module_root_dir)/lib/win64/avutil-57.dll"
-                        ]
-                     }
-                  ]
                },
                "OS=='linux' and target_arch=='x64'",
                {
                   "include_dirs":[
-                     "<(module_root_dir)/include/linux64"
+                     "<(module_root_dir)/ffmpeg/linux64/include"
                   ],
                   "libraries":[
-                     "<(module_root_dir)/lib/linux64/libavcodec-59.so",
-                     "<(module_root_dir)/lib/linux64/libavformat-59.so",
-                     "<(module_root_dir)/lib/linux64/libavutil-57.so"
+                     "<(module_root_dir)/ffmpeg/linux64/lib/libavcodec.so",
+                     "<(module_root_dir)/ffmpeg/linux64/lib/libavformat.so",
+                     "<(module_root_dir)/ffmpeg/linux64/lib/libavutil.so"
                   ],
-                  "copies":[
-                     {
-                        "destination":"<(module_root_dir)/build/Release/",
-                        "files":[
-                           "<(module_root_dir)/lib/linux64/libavcodec-59.so",
-                           "<(module_root_dir)/lib/linux64/libavformat-59.so",
-                           "<(module_root_dir)/lib/linux64/libavutil-57.so"
-                        ]
-                     }
-                  ]
                }
             ]
          ],

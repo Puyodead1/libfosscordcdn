@@ -1,7 +1,7 @@
 build/
 x64/
-lib/**/*.dll
-lib/**/*.lib
-lib/**/*.so
 .vs/
-include/**/*
+ffmpeg/linux64/**/*
+!ffmpeg/linux64/.gitkeep
+ffmpeg/win64/**/*
+!ffmpeg/win64/.gitkeep
